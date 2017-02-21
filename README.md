@@ -17,7 +17,7 @@ gem 'zombie'
 ```
 
 ## Usage
-First, decide whether you want to use Zombie::MachineLearning or Zombie::Randomization. Zombie::MachineLearning uses Latent Semantic Analysis and k-means clustering to group your content into different clusters, while Randomization simply pick random paragraphs to put in each article.
+First, decide whether you want to use Zombie::MachineLearning or Zombie::Randomization. Zombie::MachineLearning uses Latent Semantic Analysis and k-means clustering to group your content into different articles, while Randomization simply pick random paragraphs to put in each article.
 
 Zombie::MachineLearning has the potential of producing better-quality articles, but is slightly slower than Zombie::Randomization.
 
