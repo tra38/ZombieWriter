@@ -152,6 +152,6 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
 ## Credits
-The name is inspired by the concept of the [Philosphical Zombie](https://en.wikipedia.org/wiki/Philosophical_zombie). According to Wikipedia, a P-Zombie is "a hypothetical being that is indistinguishable from a normal human being except that it lacks conscious experience, qualia, or sentience". AI is the closest we can get to building a P-Zombie of our own.
+The name is inspired by the term "[Philosphical Zombie](https://en.wikipedia.org/wiki/Philosophical_zombie)". According to Wikipedia, a P-Zombie is "a hypothetical being that is indistinguishable from a normal human being except that it lacks conscious experience, qualia, or sentience". AI is the closest we can get to building a P-Zombie of our own.
 
 The logo for this project was generated using [MarkMaker](http://emblemmatic.org/markmaker/#/).
