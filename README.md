@@ -61,7 +61,7 @@ array_of_paragraphs.each do |paragraph|
 end
 ```
 
-Once you have finished giving your Zombie all the strings it needs, tell it to generate your articles. It will save them as an array, which you can then save elsewhere. Each article is numbered, starting from zero, and is also given an headline (which is the "most important sentence" in the article).
+Once you have finished giving your Zombie all the strings it needs, tell it to generate your articles. It will save them as an array, which you can then save elsewhere. Each article is numbered, starting from zero, and is also given an headline (which is the "most important sentence" in the article). All articles are formatted using Markdown.
 
 ```ruby
 array = zombie.generate_articles
