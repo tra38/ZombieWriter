@@ -89,7 +89,8 @@ Pork belly seitan photo booth.---[Hipster Ipsum](https://hipsum.co/)
 You do not need to provide sourcetext or sourceurl. If you exclude the sourceurl, the article will only display the sourcetext as citation (with no hyperlink).
 
 ```ruby
-zombie.add_string(content: "This is some Lorem filler that my friend made up.", sourcetext: "tra38's anonymous friend")
+zombie.add_string(content: "This is some Lorem filler that my friend made up.",
+sourcetext: "tra38's anonymous friend")
 ```
 
 ```markdown
@@ -99,20 +100,21 @@ This is some Lorem filler that my friend made up.---tra38's anonymous friend
 If you exclude the sourcetext, the article will use the sourceurl, while providing a hyperlink as well.
 
 ```ruby
-zombie.add_string(content: "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.", sourceurl: "http://www.zombieipsum.com")
+zombie.add_string(content: "Zombie ipsum reversus ab viral inferno.",
+sourceurl: "http://www.zombieipsum.com")
 ```
 
 ```markdown
-Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.---[http://www.zombieipsum.com](http://www.zombieipsum.com)
+Zombie ipsum reversus ab viral inferno.---[http://www.zombieipsum.com](http://www.zombieipsum.com)
 ```
 
-If you exclude both the sourcetext and the sourceurl, the article will display no citation.
+If you exclude both the sourcetext and the sourceurl, the article will display no citation. This is useful for situations where you don't need to provide any citation metadata (such as if you have handwritten the content).
 ```ruby
-zombie.add_string(content: "This is filler text that I invented up, so I do not need to provide any citation metadata.")
+zombie.add_string(content: "This is filler text that I invented.")
 ```
 
 ```markdown
-This is filler text that I invented up, so I do not need to provide any citation metadata.
+This is filler text that I invented.
 ```
 
 ##Real-World Examples
