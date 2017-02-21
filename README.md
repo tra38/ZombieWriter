@@ -23,16 +23,16 @@ gem 'zombie_writer'
 ## Usage
 First, decide whether you want to use ZombieWriter::MachineLearning or ZombieWriter::Randomization. ZombieWriter::MachineLearning uses Latent Semantic Analysis and k-means clustering to group your content into different articles, while Randomization simply pick random paragraphs to put in each article.
 
-Zombie::MachineLearning has the potential of producing better-quality articles, but is slightly slower than Zombie::Randomization.
+ZombieWriter::MachineLearning has the potential of producing better-quality articles, but is slightly slower than ZombieWriter::Randomization.
 
 To create a MachineLearning zombie...
 ```ruby
-zombie = Zombie::MachineLearning.new
+zombie = ZombieWriter::MachineLearning.new
 ```
 
 And to create a Randomization zombie...
 ```ruby
-zombie = Zombie::Randomization.new
+zombie = ZombieWriter::Randomization.new
 ```
 
 Then, once you have your zombie, add your content.
@@ -135,7 +135,7 @@ In both instances, we used [this CSV file](https://gist.github.com/tra38/805003e
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment. Run `bundle exec zombie` to use the gem in this directory, ignoring other installed copies of this gem.
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment. Run `bundle exec zombie_writer` to use the gem in this directory, ignoring other installed copies of this gem.
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
