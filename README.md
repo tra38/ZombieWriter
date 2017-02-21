@@ -33,7 +33,9 @@ zombie = Zombie::Randomization.new
 
 Then, once you have your zombie, add your content.
 ```ruby
-zombie.add_string(content: "Lorem ipsum dolor sit amet.",sourcetext: "Cicero's Great Speech On Ethics", sourceurl: "http://example.com/lorem-ipsum")
+zombie.add_string(content: "Lorem ipsum dolor sit amet.",
+sourcetext: "Cicero's Great Speech On Ethics",
+sourceurl: "http://example.com/lorem-ipsum")
 ```
 
 In the generated article, this content will appear in Markdown as:
