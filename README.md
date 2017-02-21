@@ -1,5 +1,7 @@
 # ZombieWriter
 
+![Logo](zombie_writer_logo.png)
+
 ZombieWriter is a Ruby gem that will enable users to generate news articles by aggregating paragraphs from other sources.
 
 While you have to provide the paragraphs, Zombie will arrange the paragraphs into different articles for you to use and edit to your heart's content. You may choose between Machine Learning (Latent Semantic Analysis and k-means clustering) or Randomization.
@@ -149,3 +151,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
+## Credits
+The name is inspired by the concept of the [Philosphical Zombie](https://en.wikipedia.org/wiki/Philosophical_zombie). According to Wikipedia, a P-Zombie is "a hypothetical being that is indistinguishable from a normal human being except that it lacks conscious experience, qualia, or sentience". AI is the closest we can get to building a P-Zombie of our own.
+
+The logo for this project was generated using [MarkMaker](http://emblemmatic.org/markmaker/#/).
