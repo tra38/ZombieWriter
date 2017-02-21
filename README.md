@@ -1,6 +1,6 @@
-# Zombie
+# ZombieWriter
 
-Zombie is a Ruby gem that will enable users to generate news articles by aggregating paragraphs from other sources.
+ZombieWriter is a Ruby gem that will enable users to generate news articles by aggregating paragraphs from other sources.
 
 While you have to provide the paragraphs, Zombie will arrange the paragraphs into different articles for you to use and edit to your heart's content. You may choose between Machine Learning (Latent Semantic Analysis and k-means clustering) or Randomization.
 
@@ -9,17 +9,17 @@ While you have to provide the paragraphs, Zombie will arrange the paragraphs int
 ### Command Line
 
 ```
-gem install zombie
+gem install zombie_writer
 ```
 
 ### Gemfile
 
 ```ruby
-gem 'zombie'
+gem 'zombie_writer'
 ```
 
 ## Usage
-First, decide whether you want to use Zombie::MachineLearning or Zombie::Randomization. Zombie::MachineLearning uses Latent Semantic Analysis and k-means clustering to group your content into different articles, while Randomization simply pick random paragraphs to put in each article.
+First, decide whether you want to use ZombieWriter::MachineLearning or ZombieWriter::Randomization. ZombieWriter::MachineLearning uses Latent Semantic Analysis and k-means clustering to group your content into different articles, while Randomization simply pick random paragraphs to put in each article.
 
 Zombie::MachineLearning has the potential of producing better-quality articles, but is slightly slower than Zombie::Randomization.
 
@@ -126,8 +126,8 @@ This is filler text that I invented.
 ###NaNoGenMo articles
 The "National Novel Generation Month" competition has generated a lot of commentary on the Internet. Rather than hand-writing out new commentary, why not reuse existing ones?
 
-- [Articles generated using Zombie::MachineLearning](https://gist.github.com/tra38/aa7e9c63708f6e21c32db5c3616162b5)
-- [Articles generated using Zombie::Randomization](https://gist.github.com/tra38/a65408790642560498aa1d40a05be9fe)
+- [Articles generated using ZombieWriter::MachineLearning](https://gist.github.com/tra38/aa7e9c63708f6e21c32db5c3616162b5)
+- [Articles generated using ZombieWriter::Randomization](https://gist.github.com/tra38/a65408790642560498aa1d40a05be9fe)
 
 In both instances, we used [this CSV file](https://gist.github.com/tra38/805003ef51ff63093b3c2775f161ce3c) as source data.
 

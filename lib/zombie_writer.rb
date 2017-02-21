@@ -1,9 +1,9 @@
-require "zombie/version"
-require "zombie/redcarpet_configuration"
+require "zombie_writer/version"
+require "zombie_writer/redcarpet_configuration"
 require 'classifier-reborn'
 require 'kmeans-clusterer'
 
-module Zombie
+module ZombieWriter
 
   def self.citation_constructor(paragraph)
     if (paragraph[:sourceurl] && paragraph[:sourcetext])
@@ -35,7 +35,7 @@ module Zombie
 
       plain_to_markdown[stripped_down_content] = content
 
-      paragraph_data[content] = Zombie.citation_constructor(paragraph)
+      paragraph_data[content] = ZombieWriter.citation_constructor(paragraph)
 
       labels << stripped_down_content
       lsi.add_item(stripped_down_content)
@@ -95,7 +95,7 @@ module Zombie
     def add_string(paragraph)
       content = paragraph[:content]
 
-      paragraph_data[content] = Zombie.citation_constructor(paragraph)
+      paragraph_data[content] = ZombieWriter.citation_constructor(paragraph)
 
       labels << content
     end
