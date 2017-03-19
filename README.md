@@ -1,7 +1,5 @@
 # ZombieWriter
 
-[![Join the chat at https://gitter.im/ZombieWriter/Lobby](https://badges.gitter.im/ZombieWriter/Lobby.svg)](https://gitter.im/ZombieWriter/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 ![Logo](zombie_writer_logo.png)
 
 ZombieWriter is a Ruby gem that will enable users to generate news articles by aggregating paragraphs from other sources.
