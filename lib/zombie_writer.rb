@@ -17,6 +17,15 @@ module ZombieWriter
     end
   end
 
+  def self.header(index, article_for_summarization)
+    generated_title = ClassifierReborn::Summarizer.summary(article_for_summarization, 1)
+    "## #{index} - #{generated_title}"
+  end
+
+  def self.formatted_article(header, final_article)
+    "#{header}\n\n#{final_article}\n"
+  end
+
   class MachineLearning
     attr_reader :lsi, :labels, :paragraph_data, :renderer, :plain_to_markdown
 
@@ -57,8 +66,8 @@ module ZombieWriter
           "#{content}#{citation}"
         end
 
-        generated_title = ClassifierReborn::Summarizer.summary(article_for_summarization, 1)
-        "<h2>#{cluster.id.to_s} - #{generated_title}</h2>\n#{final_article}\n"
+        header = ZombieWriter.header(cluster.id.to_s, article_for_summarization)
+        ZombieWriter.formatted_article(header, final_article)
       end
     end
 
@@ -114,8 +123,8 @@ module ZombieWriter
           "#{content}#{citation}"
         end
 
-        generated_title = ClassifierReborn::Summarizer.summary(article_for_summarization, 1)
-        "<h2>#{index} - #{generated_title}</h2>\n#{final_article}\n"
+        header = ZombieWriter.header(index, article_for_summarization)
+        ZombieWriter.formatted_article(header, final_article)
       end
     end
 
