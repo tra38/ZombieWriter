@@ -91,7 +91,7 @@ Pork belly seitan photo booth.---[Hipster Ipsum](https://hipsum.co/)
 <hr>
 ```
 
-###Citation
+### Citation
 You do not need to provide sourcetext or sourceurl. If you exclude the sourceurl, the article will only display the sourcetext as citation (with no hyperlink).
 
 ```ruby
@@ -123,9 +123,9 @@ zombie.add_string(content: "This is filler text that I invented.")
 This is filler text that I invented.
 ```
 
-##Real-World Examples
+## Real-World Examples
 
-###NaNoGenMo articles
+### NaNoGenMo articles
 The "National Novel Generation Month" competition has generated a lot of commentary on the Internet. Rather than hand-writing out new commentary, why not reuse existing ones?
 
 - [Articles generated using ZombieWriter::MachineLearning](https://gist.github.com/tra38/aa7e9c63708f6e21c32db5c3616162b5)
