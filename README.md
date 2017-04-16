@@ -4,7 +4,7 @@
 
 ZombieWriter is a Ruby gem that will enable users to generate news articles by aggregating paragraphs from other sources.
 
-While you have to provide the paragraphs, Zombie will arrange the paragraphs into different articles for you to use and edit to your heart's content. You may choose between Machine Learning (Latent Semantic Analysis and k-means clustering) or Randomization.
+While you have to provide the paragraphs, ZombieWriter will arrange the paragraphs into different articles for you to use and edit to your heart's content. You may choose between Machine Learning (Latent Semantic Analysis and k-means clustering) or Randomization.
 
 ## Installation
 
