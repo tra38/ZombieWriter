@@ -20,6 +20,9 @@ gem install zombie_writer
 gem 'zombie_writer'
 ```
 
+### Additional Requirements
+ZombieWriter also requires [GNU GSL](http://www.gnu.org/software/gsl) and [rb-gsl](https://rubygems.org/gems/rb-gsl) (a Ruby gem that interfaces with the GSL library). Please see [Issue #5](https://github.com/tra38/ZombieWriter/issues/5) for more information.
+
 ## Usage
 First, decide whether you want to use ZombieWriter::MachineLearning or ZombieWriter::Randomization. ZombieWriter::MachineLearning uses Latent Semantic Analysis and k-means clustering to group your content into different articles, while Randomization simply pick random paragraphs to put in each article.
 
