@@ -18,8 +18,16 @@ module ZombieWriter
   end
 
   def self.header(index, article_for_summarization)
-    generated_title = ClassifierReborn::Summarizer.summary(article_for_summarization, 1)
-    "## #{index} - #{generated_title}"
+    begin
+      generated_title = ClassifierReborn::Summarizer.summary(article_for_summarization, 1)
+    rescue Exception
+      generated_title = nil
+    end
+    if generated_title
+      "## #{index} - #{generated_title}"
+    else
+      "## #{index}"
+    end
   end
 
   def self.formatted_article(header, final_article)
